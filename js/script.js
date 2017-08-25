@@ -8,6 +8,20 @@ $(document).ready(function(){
 
   $('nav').hide();
 
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > window.innerHeight) {
+      $('nav').fadeIn();
+    } else {
+      $('nav').fadeOut();
+    }
+  });
+
+
+  // window.scrollTo(0, window.innerHeight);
+
+
+
   // if section top = window top show nav
 
 });
