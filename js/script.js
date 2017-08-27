@@ -8,30 +8,66 @@ $(document).ready(function(){
 
   $('nav').hide();
 
+
+var cardOne = $("#budget-app").offset().top - 50;
+var cardTwo = $("#bolt").offset().top - 50;
+var cardThree = $("#sustaining-good").offset().top - 50;
+var cardFour = $("#branding").offset().top - 50;
+var cardFive = $("#print").offset().top - 50;
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > cardOne && scroll < cardTwo) {
+        $(".nav_item").removeClass("nav-active");
+        $('#number-nav').find('li:first-child').addClass("nav-active");
+    }
+    else if(scroll > cardTwo && scroll < cardThree) {
+      $(".nav_item").removeClass("nav-active");
+      $('#number-nav').find('li:nth-child(2)').addClass("nav-active");
+    }
+    else if(scroll > cardThree && scroll < cardFour) {
+      $(".nav_item").removeClass("nav-active");
+      $('#number-nav').find('li:nth-child(3)').addClass("nav-active");
+    }
+    else if(scroll > cardFour && scroll < cardFive) {
+      $(".nav_item").removeClass("nav-active");
+      $('#number-nav').find('li:nth-child(4)').addClass("nav-active");
+    }
+    else if(scroll > cardFive) {
+      $(".nav_item").removeClass("nav-active");
+      $('#number-nav').find('li:nth-child(5)').addClass("nav-active");
+    }
+    else {
+        $(".nav_item").removeClass("nav-active");
+    }
+  });
+
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > window.innerHeight) {
+    if (y > window.innerHeight - 50) {
       $('nav').fadeIn();
     } else {
       $('nav').fadeOut();
     }
   });
 
+  $(".nav_item").click(function(){
+      $(".nav_item").removeClass("nav-active");
+      $(this).addClass("nav-active");
+  });
 
-  // window.scrollTo(0, window.innerHeight);
+  $('#back-to-top').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 700);
+  });
 
-
-
-  // if section top = window top show nav
 
 });
 
 
 
 //
-// Step 2: Scolling down needs to snap to the bottom of the next section.
-//
-// Step 3: The navigation needs to follow the user as the page scrolls vertically
-//
-// each section corresponds with a number in the navigation that should have an active state when the user is on the corresponding section
+// Scolling down needs to snap to the bottom of the next section.
 //
