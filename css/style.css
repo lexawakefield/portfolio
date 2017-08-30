@@ -49,8 +49,8 @@
 }
 
 #print {
-  /*background-image: url(../imgs/section6-placeholder.jpg);*/
-  background-color: #B0B0B0;
+  background-image: url(../imgs/lexa-wakefield-print-work-beer-labels.jpg);
+  /*background-color: #B0B0B0;*/
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,13 +143,13 @@ li a:hover {
 .centered {
     width: 100%;
     text-align: center;
-    padding-right: 3.5%;
+    padding-right: 6%;
     position: absolute;
     bottom: 3%;
 }
 #triangle {
-  max-height: 2%;
-  max-width: 2%;
+  max-height: 3%;
+  max-width: 3%;
 }
 
 .all-caps {
@@ -175,65 +175,50 @@ li a:hover {
 
 /*for the form*/
 
-.background {
+body {
   height: 100vh;
   background-color: #e7c9bd;
+  overflow-x: hidden;
 }
 
-.contact-form{
-  width:600px;
-  margin:0 auto;
-}
-.contact-form .form-control{
-	border:none;
-	box-shadow:none;
-	border-radius:0;
-	border-bottom: 1px solid #cfd8dc;
-	transition: 1s ease;
-	font-weight: bold;
-	}
-	.contact-form .form-control:focus{
-	transition: 1s ease;
-	border-bottom: 1px solid #2abfcc;
-	}
-	.contact-main  .contact-main-title h2{
-	margin-top:0;
-	}
-
-	.contact-form .send-msg{
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      text-align: center;
-      border: none;
-      background-color: black;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 18px;
-      width: 100%;
-      max-width: 250px;
-      margin: 15px auto 0;
-      display: block;
-	}
-
-	.contact-form .send-msg:hover{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    width: 100%;
-    max-width: 250px;
-    margin: 15px auto 0;
-    display: block;
-	}
 
   /*media queries*/
-  
-  @media only screen and (max-width: 900px) {
 
+@media only screen and (max-width: 900px) {
+
+nav {
+    float: left;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    z-index: 999999;
+    display: block;
   }
+#number-nav {
+  padding-left: 50%;
+  text-align: center;
+  }
+
+.row {
+  padding-top: 5%;
+  background: rgba(255,255,255,.8);
+  /*background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));*/
+}
+#triangle {
+  max-height: 6%;
+  max-width: 6%;
+}
+.portfolio .container .row {
+    position: relative;
+    top: 94%;
+    transform: translateY(-100%);
+}
+#meet-lexa .container .row {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+}
