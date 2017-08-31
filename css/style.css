@@ -178,7 +178,24 @@ body {
   background-color: #e7c9bd;
   overflow-x: hidden;
 }
+h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: black;
+  margin: 0;
+}
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: black;
+}
 
+.row .centered {
+  text-align: center;
+}
 
   /*media queries*/
 
@@ -197,11 +214,10 @@ nav {
   text-align: center;
   }
 
-.row {
+/*.row {
   padding-top: 5%;
   background: rgba(255,255,255,.8);
-  /*background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));*/
-}
+}*/
 #triangle {
   max-height: 6%;
   max-width: 6%;
