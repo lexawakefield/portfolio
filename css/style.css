@@ -65,7 +65,6 @@ h1 {
   font-size: 48px;
   color: black;
   margin: 0;
-  padding-left: 9.5%;
   padding-top: 2%;
 }
 
@@ -164,7 +163,7 @@ li a:hover {
 
 #meet-lexa .container .row {
     position: relative;
-    top: 70%;
+    top: 80%;
     transform: translateY(-100%);
 }
 #contact-buttons {
@@ -214,10 +213,6 @@ nav {
   text-align: center;
   }
 
-/*.row {
-  padding-top: 5%;
-  background: rgba(255,255,255,.8);
-}*/
 #triangle {
   max-height: 6%;
   max-width: 6%;
@@ -227,12 +222,20 @@ nav {
     top: 94%;
     transform: translateY(-100%);
 }
-#meet-lexa .container .row {
+/*#meet-lexa .container .row {
     position: relative;
     top: 50%;
     transform: translateY(-100%);
     margin-top: 0;
     margin-bottom: 0;
+}*/
+#meet-lexa .container {
+  height: 100vh;
+}
+#instagram-icon, #linkedin-icon, #dribbble-icon {
+  max-width: 14%;
+  padding: 1%;
+  margin-top: 4%;
 }
 
 }
