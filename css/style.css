@@ -39,8 +39,7 @@
 }
 
 #branding {
-  /*background-image: url(../imgs/section5-placeholder.jpg);*/
-  background-color: gray;
+  background-image: url(../imgs/lexa-wakefield-branding-string-and-story.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +49,6 @@
 
 #print {
   background-image: url(../imgs/lexa-wakefield-print-work-beer-labels.jpg);
-  /*background-color: #B0B0B0;*/
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
