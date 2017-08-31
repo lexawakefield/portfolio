@@ -148,6 +148,13 @@ li a:hover {
   max-height: 3%;
   max-width: 3%;
 }
+a {
+  color: black;
+}
+a:hover {
+  color: #024887;
+  text-decoration: none;
+}
 
 .all-caps {
   text-transform: uppercase;
