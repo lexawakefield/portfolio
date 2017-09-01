@@ -175,6 +175,13 @@ a:hover {
   margin-top: 2%;
 }
 
+.hidden-image {
+  display: none;
+}
+#hidden-img {
+  display: none;
+}
+
 /*for the form*/
 
 body {
@@ -239,5 +246,17 @@ nav {
   padding: 1%;
   margin-top: 4%;
 }
+ #print {
+   background-image: none;
+   background-color: white;
+ }
+ .hidden-image {
+   display: block;
+   max-width: 100%;
+ }
+ #hidden-img {
+   display: flex;
+   max-width: 100%;
+ }
 
 }
