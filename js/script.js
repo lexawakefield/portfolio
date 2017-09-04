@@ -63,11 +63,23 @@ $(window).scroll(function() {
     }, 700);
   });
 
+  // below are the icon hover states
+  $('#instagram-icon').hover(function() {
+    $(this).attr('src','imgs/instagram-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/instagram-icon.jpg');
+  });
+
+  $('#linkedin-icon').hover(function() {
+    $(this).attr('src','imgs/linkedin-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/linkedin-icon.jpg');
+  });
+
+  $('#dribbble-icon').hover(function() {
+    $(this).attr('src','imgs/dribbble-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/dribbble-icon.jpg');
+  });
 
 });
-
-
-
-//
-// Scolling down needs to snap to the bottom of the next section.
-//

@@ -28,7 +28,7 @@
 }
 
 #sustaining-good {
-  background-image: url(../imgs/sg-mockup-green.jpg);
+  background-image: url(../imgs/sg-mockup-yellow.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,6 +122,23 @@ li a:hover {
   margin: 15px auto 0;
   display: block;
 }
+
+.button:hover {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  background-color: #024887;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 100%;
+  max-width: 250px;
+  margin: 15px auto 0;
+  display: block;
+}
+
 .container {
   height: 100vh;
   position: relative;
@@ -212,17 +229,20 @@ label {
 
 @media only screen and (max-width: 900px) {
 
-nav {
+  nav {
     float: left;
     text-align: center;
     position: fixed;
-    top: 10%;
+    top: 35%;
     z-index: 999999;
     display: block;
   }
-#number-nav {
-  padding-left: 50%;
-  text-align: center;
+
+  #number-nav {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
   }
 
 #triangle {
@@ -231,12 +251,9 @@ nav {
 }
 .portfolio .container .row {
     position: relative;
-    top: 94%;
+    top: 80%;
     transform: translateY(-100%);
 }
-/*.container {
-  background-color: rgba(255, 255, 255, 0.6);
-}*/
 
 #meet-lexa .container {
   height: 100vh;
@@ -246,7 +263,7 @@ nav {
   padding: 1%;
   margin-top: 4%;
 }
- #print {
+ #print, #branding {
    background-image: none;
    background-color: white;
  }
@@ -257,6 +274,31 @@ nav {
  #hidden-img {
    display: flex;
    max-width: 100%;
+   padding-bottom: 5%;
  }
+
+}
+@media only screen and (max-width: 640px) {
+  nav {
+      top:0;
+      padding-top: 6%;
+      float: left;
+      text-align: center;
+      position: fixed;
+      z-index: 999999;
+      width: 100%
+    }
+  #number-nav {
+    text-align: center;
+    width: 100%;
+    }
+  .nav_item{
+    display: inline-block;
+  }
+  #hidden-img {
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 10%;
+  }
 
 }
