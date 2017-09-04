@@ -18,8 +18,7 @@
 }
 
 #bolt {
-  /*background-image: url(../imgs/section3-placeholder.jpg);*/
-  background-color: #B0B0B0;
+  background-image: url(../imgs/lexa-wakefield-bolt-app-screens-mockup-1.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +262,7 @@ label {
   padding: 1%;
   margin-top: 4%;
 }
- #print, #branding, #sustaining-good {
+ #print, #branding, #sustaining-good, #bolt {
    background-image: none;
    background-color: white;
  }
