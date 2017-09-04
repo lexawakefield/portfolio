@@ -28,7 +28,7 @@
 }
 
 #sustaining-good {
-  background-image: url(../imgs/sg-mockup-yellow.jpg);
+  background-image: url(../imgs/lexa-wakefield-sustaining-good-website-mockup.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@ label {
 }
 .portfolio .container .row {
     position: relative;
-    top: 80%;
+    top: 90%;
     transform: translateY(-100%);
 }
 
@@ -263,7 +263,7 @@ label {
   padding: 1%;
   margin-top: 4%;
 }
- #print, #branding {
+ #print, #branding, #sustaining-good {
    background-image: none;
    background-color: white;
  }
