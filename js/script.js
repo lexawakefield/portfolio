@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+  $('#triangle-side').hover(function() {
+    $(this).attr('src','imgs/back-active.png');
+  }, function() {
+    $(this).attr('src','imgs/back-to-home.png');
+  });
+
   // scroll to nav item
   $('.nav_item').click(function(e) {
     e.preventDefault();
@@ -81,5 +88,13 @@ $(window).scroll(function() {
   }, function() {
     $(this).attr('src','imgs/dribbble-icon.jpg');
   });
+
+  $('#triangle').hover(function() {
+    $(this).attr('src','imgs/back-to-top-active.png');
+  }, function() {
+    $(this).attr('src','imgs/back-to-top.png');
+  });
+
+
 
 });

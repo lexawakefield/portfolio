@@ -102,7 +102,7 @@ li a:hover {
 }
 .nav-active a {
   text-decoration: none;
-  color: #E8521D;
+  color: #E8521D!important;
 }
 
 .button {
@@ -157,7 +157,7 @@ li a:hover {
     position: absolute;
     bottom: 3%;
 }
-#triangle {
+#triangle, #triangle-side {
   max-height: 3%;
   max-width: 3%;
 }
@@ -275,6 +275,9 @@ label {
    padding-bottom: 5%;
  }
 
+}
+.nav_item a:focus {
+  color: #000;
 }
 @media only screen and (max-width: 640px) {
   nav {
