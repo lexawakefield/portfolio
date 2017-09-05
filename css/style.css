@@ -8,8 +8,7 @@
 }
 
 #budget-app {
-  /*background-image: url(../imgs/section2-placeholder.jpg);*/
-  background-color: #A0A0A0;
+  background-image: url(../imgs/lexa-wakefield-budget-app-heypal.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,12 +97,12 @@ li a:hover {
 }
 
 .nav-active {
-  color: #e7c9bd;
+  color: #E8521D;
   text-decoration: line-through;
 }
 .nav-active a {
   text-decoration: none;
-  color: #e7c9bd;
+  color: #E8521D;
 }
 
 .button {
@@ -262,7 +261,7 @@ label {
   padding: 1%;
   margin-top: 4%;
 }
- #print, #branding, #sustaining-good, #bolt {
+ #print, #branding, #sustaining-good, #bolt, #budget-app {
    background-image: none;
    background-color: white;
  }
