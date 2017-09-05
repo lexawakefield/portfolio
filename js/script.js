@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+  $('#triangle-side').hover(function() {
+    $(this).attr('src','imgs/back-active.png');
+  }, function() {
+    $(this).attr('src','imgs/back-to-home.png');
+  });
+
   // scroll to nav item
   $('.nav_item').click(function(e) {
     e.preventDefault();
@@ -63,11 +70,31 @@ $(window).scroll(function() {
     }, 700);
   });
 
+  // below are the icon hover states
+  $('#instagram-icon').hover(function() {
+    $(this).attr('src','imgs/instagram-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/instagram-icon.jpg');
+  });
+
+  $('#linkedin-icon').hover(function() {
+    $(this).attr('src','imgs/linkedin-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/linkedin-icon.jpg');
+  });
+
+  $('#dribbble-icon').hover(function() {
+    $(this).attr('src','imgs/dribbble-icon-active.jpg');
+  }, function() {
+    $(this).attr('src','imgs/dribbble-icon.jpg');
+  });
+
+  $('#triangle').hover(function() {
+    $(this).attr('src','imgs/back-to-top-active.png');
+  }, function() {
+    $(this).attr('src','imgs/back-to-top.png');
+  });
+
+
 
 });
-
-
-
-//
-// Scolling down needs to snap to the bottom of the next section.
-//

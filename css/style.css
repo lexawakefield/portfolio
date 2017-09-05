@@ -1,6 +1,5 @@
 #meet-lexa {
-  /*background-image: url(../imgs/section1-placeholder.jpg);*/
-  background-color: gray;
+  background-image: url(../imgs/brooke-cagle-stock-image.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +8,7 @@
 }
 
 #budget-app {
-  /*background-image: url(../imgs/section2-placeholder.jpg);*/
-  background-color: #A0A0A0;
+  background-image: url(../imgs/lexa-wakefield-budget-app-heypal.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,8 +17,7 @@
 }
 
 #bolt {
-  /*background-image: url(../imgs/section3-placeholder.jpg);*/
-  background-color: #B0B0B0;
+  background-image: url(../imgs/lexa-wakefield-bolt-app-screens-mockup-1.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,8 +26,7 @@
 }
 
 #sustaining-good {
-  /*background-image: url(../imgs/section4-placeholder.jpg);*/
-  background-color: #A0A0A0;
+  background-image: url(../imgs/lexa-wakefield-sustaining-good-website-mockup.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,12 +97,12 @@ li a:hover {
 }
 
 .nav-active {
-  color: #e7c9bd;
+  color: #E8521D;
   text-decoration: line-through;
 }
 .nav-active a {
   text-decoration: none;
-  color: #e7c9bd;
+  color: #E8521D!important;
 }
 
 .button {
@@ -124,6 +120,23 @@ li a:hover {
   margin: 15px auto 0;
   display: block;
 }
+
+.button:hover {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  background-color: #024887;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 100%;
+  max-width: 250px;
+  margin: 15px auto 0;
+  display: block;
+}
+
 .container {
   height: 100vh;
   position: relative;
@@ -144,7 +157,7 @@ li a:hover {
     position: absolute;
     bottom: 3%;
 }
-#triangle {
+#triangle, #triangle-side {
   max-height: 3%;
   max-width: 3%;
 }
@@ -177,6 +190,13 @@ a:hover {
   margin-top: 2%;
 }
 
+.hidden-image {
+  display: none;
+}
+#hidden-img {
+  display: none;
+}
+
 /*for the form*/
 
 body {
@@ -207,17 +227,20 @@ label {
 
 @media only screen and (max-width: 900px) {
 
-nav {
+  nav {
     float: left;
     text-align: center;
     position: fixed;
-    top: 10%;
+    top: 35%;
     z-index: 999999;
     display: block;
   }
-#number-nav {
-  padding-left: 50%;
-  text-align: center;
+
+  #number-nav {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
   }
 
 #triangle {
@@ -226,16 +249,10 @@ nav {
 }
 .portfolio .container .row {
     position: relative;
-    top: 94%;
+    top: 90%;
     transform: translateY(-100%);
 }
-/*#meet-lexa .container .row {
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
-    margin-top: 0;
-    margin-bottom: 0;
-}*/
+
 #meet-lexa .container {
   height: 100vh;
 }
@@ -244,5 +261,45 @@ nav {
   padding: 1%;
   margin-top: 4%;
 }
+ #print, #branding, #sustaining-good, #bolt, #budget-app {
+   background-image: none;
+   background-color: white;
+ }
+ .hidden-image {
+   display: block;
+   max-width: 100%;
+ }
+ #hidden-img {
+   display: flex;
+   max-width: 100%;
+   padding-bottom: 5%;
+ }
+
+}
+.nav_item a:focus {
+  color: #000;
+}
+@media only screen and (max-width: 640px) {
+  nav {
+      top:0;
+      padding-top: 6%;
+      float: left;
+      text-align: center;
+      position: fixed;
+      z-index: 999999;
+      width: 100%
+    }
+  #number-nav {
+    text-align: center;
+    width: 100%;
+    }
+  .nav_item{
+    display: inline-block;
+  }
+  #hidden-img {
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 10%;
+  }
 
 }
